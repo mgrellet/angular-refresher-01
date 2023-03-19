@@ -1,0 +1,11 @@
+<h1>Post</h1>
+
+<ul class="list-group">
+  <app-post
+    *ngFor="let post of myPosts | async"
+    [post]="post"
+    (clickPost)="listeningChildren($event)"
+  >
+
+  </app-post>
+</ul>
